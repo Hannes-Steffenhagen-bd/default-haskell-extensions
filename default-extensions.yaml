@@ -1,0 +1,33 @@
+# Some people believe it's better to declare all extensions used in each source
+# file. I disagree. Some extensions are just so ubitiquously used that it'd be a
+# pain to enable them everywhere they're used.
+# Some extensions (like TemplateHaskell) IMHO should be enabled on a
+# source-by-source basis, but some (mostly syntax and type extensions) should be
+# used consistently throughout an entire project.
+default-extensions:
+# Make string literals polymorphic
+- OverloadedStrings
+# Allows as to define type level functions and associated types
+- TypeFamilies
+# Generalized Algebraic Data Types – essentially this allows us to
+# specify the types of data constructors.
+- GADTs
+- LambdaCase
+# Allows shorthand syntax Record{fieldName} instead of Record{fieldName = fieldName}
+# to match record fields
+- NamedFieldPuns
+# Allows us to specify _how_ certain instanced should be derived
+- DerivingVia
+# As the name implies, allows us to define classes and instances with more than one parameter
+- MultiParamTypeClasses
+# Allows binary operators as type names
+- TypeOperators
+# Allows nested foralls in types.
+- RankNTypes
+# Allows us contexts (the left side of => arrows in types) to be more elaborate
+- FlexibleContexts
+# Allows us to use regular data values as types
+- DataKinds
+# Makes type variables in nested contexts behave closer to what most people expect
+- ScopedTypeVariables
+- StandaloneDeriving
