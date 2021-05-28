@@ -32,3 +32,4 @@ default-extensions:
 - ScopedTypeVariables
 - StandaloneDeriving
 - DeriveGeneric
+- TypeApplications
