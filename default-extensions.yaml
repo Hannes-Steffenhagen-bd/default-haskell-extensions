@@ -31,3 +31,4 @@ default-extensions:
 # Makes type variables in nested contexts behave closer to what most people expect
 - ScopedTypeVariables
 - StandaloneDeriving
+- DerivingGeneric
