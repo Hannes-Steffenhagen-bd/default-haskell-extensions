@@ -33,3 +33,9 @@ default-extensions:
 - StandaloneDeriving
 - DeriveGeneric
 - TypeApplications
+# Allows syntax of the form (function -> pattern) for patterns
+# Ex: f (toLower -> "hello") = "world"
+#     f "HELLO" -- => "world"
+# This is particularly useful for data structures without
+# built-in syntactic support like Maps or Vectors
+- ViewPatterns
